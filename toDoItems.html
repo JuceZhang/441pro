@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Website - To Do Items</title>
+<link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<ul class="navbar-menu">
+<li class="navbar-item"><a href="home.html" class="navbar-link active">Home</a></li>
+<li class="navbar-item"><a href="products.html" class="navbar-link">Products</a></li>
+<li class="navbar-item"><a href="cart.html" class="navbar-link">Cart</a></li>
+<li class="navbar-item"><a href="checkout.html" class="navbar-link">Checkout</a></li>
+<li class="navbar-item"><a href="toDoItems.html" class="navbar-link active">To Do Items</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="user-info" class="user-info">
+<h2>User Information</h2>
+<p>Name: John Smith</p>
+<p>Contact: 123-456-7890</p>
+<button onclick="editProfile()">Edit Personal Information</button>
+</section>
+<section id="order-history" class="order-history">
+<h2>Order History</h2>
+<ul id="orderList" class="order-list">
+<li class="order-item">
+<p>Order ID: 123456</p>
+<p>Date Purchased: April 1, 2023</p>
+<p>Total Amount: $99.99</p>
+<button onclick="viewDetails(123456)">View Details</button>
+</li>
+<!-- Repeat the above structure for each order in the history -->
+</ul>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 My Shop. All rights reserved.</p>
+</footer>
+<script src="script1.js"></script>
+</body>
+</html>

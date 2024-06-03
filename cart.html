@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Website - Cart</title>
+<link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<ul class="navbar-menu">
+<li class="navbar-item"><a href="home.html" class="navbar-link active">Home</a></li>
+<li class="navbar-item"><a href="products.html" class="navbar-link">Products</a></li>
+<li class="navbar-item"><a href="cart.html" class="navbar-link">Cart</a></li>
+<li class="navbar-item"><a href="checkout.html" class="navbar-link">Checkout</a></li>
+<li class="navbar-item"><a href="toDoItems.html" class="navbar-link">To Do Items</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="cart-items" class="cart-items">
+<h2>Your Cart</h2>
+<div class="cart-item" id="cartItem1">
+<img src="8e4571d046b1d45390906f9042d8145f.jpg" width="500" height="450"alt="Product 1" class="cart-image">
+<div class="cart-info">
+<h3 class="cart-item-name">Product 1 Name</h3>
+<p class="cart-item-price">$19.99</p>
+<input type="number" class="quantity" value="1" min="1">
+<button class="remove-item" onclick="removeFromCart(1)">Remove</button>
+</div>
+</div>
+<!-- Repeat the above structure for each item in the cart -->
+<div class="cart-item" id="cartItem2">
+<img src="fcd8453573f3726615dcf0c6d6cefcd4.jpeg" width="500" height="450"alt="Product 2" class="cart-image">
+<div class="cart-info">
+<h3 class="cart-item-name">Product 2 Name</h3>
+<p class="cart-item-price">$800</p>
+<input type="number"

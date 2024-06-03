@@ -1,0 +1,47 @@
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    }
+    
+    .navbar-menu {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .navbar-item {
+    margin-right: 10px;
+    }
+    
+    .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    }
+    
+  .product-image-container {  
+    position: relative;  
+    width: 70%; /* Or set a specific width */  
+  }  
+    
+  .product-image {  
+    width: 80%;  
+    transition: transform 0.3s ease;  
+  }  
+    
+  .zoom-in, .zoom-out {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    /* Add your styling for the buttons */  
+  }  
+    
+  .zoom-in {  
+    left: 20px;  
+  }  
+    
+  .zoom-out {  
+    right: 20px;  
+  }  
+    

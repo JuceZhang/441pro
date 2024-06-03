@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Website - Checkout</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<ul class="navbar-menu">
+<li class="navbar-item"><a href="home.html" class="navbar-link">Home</a></li>
+<li class="navbar-item"><a href="products.html" class="navbar-link">Products</a></li>
+<li class="navbar-item"><a href="cart.html" class="navbar-link">Cart</a></li>
+<li class="navbar-item"><a href="checkout.html" class="navbar-link active">Checkout</a></li>
+<li class="navbar-item"><a href="toDoItems.html" class="navbar-link">To Do Items</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="shipping-address" class="shipping-address">
+<h2>Shipping Address</h2>
+<form id="shippingForm">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="address">Address:</label>
+<input type="text" id="address" name="address" required>
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" required pattern="[0-9]{10}">
+<button type="submit">Submit Shipping Address</button>
+</form>
+</section>
+<section id="payment-options" class="payment-options">
+<h2>Payment Options</h2>
+<ul class="payment-methods">
+<li>
+<input type="radio" id="creditCard" name="paymentMethod" value="creditCard" required>
+<label for="creditCard">Credit Card</label>
+<div class="credit-card-details">
+<input type="text" placeholder="Card Number" required>
+<input type="text" placeholder="Expiration Date" required>
+<input type="text" placeholder="CVV" required>
+</div>
+</li>
+<li>
+<input type="radio" id="paypal" name="paymentMethod" value="paypal" required>
+<label for="paypal">PayPal</label>
+<button>Pay with PayPal</button>
+</li>
+</ul>
+</section>
+<section id="place-order" class="place-order">
+<h2>Place Your Order</h2>
+<button type="submit" form="shippingForm" id="submitOrder">Submit Order</button>
+</section>
+</main>
+<footer>
+<p>&copy; 2023 My Shop. All rights reserved.</p>
+</footer>
+<script>
+// JavaScript code to handle form submission and validation
+document.addEventListener('DOMContentLoaded', function() {
+const shippingForm = document.getElementById('shippingForm');
+shippingForm.addEventListener('submit', function(event) {
+event.preventDefault();
+// Perform form validation and submit the data to the server via AJAX or redirect to a confirmation page
+// For example:
+// const formData = new FormData(shippingForm);
+// fetch('/submit-order', {
+// method: 'POST',
+// body: formData
+// })
+// .then(response => response.json())
+// .then(data => {
+// console.log(data);
+// window.location.href = '/confirmation';
+// })
+// .catch(error => console.log(error));
+});
+});
+</script>
+</body>
+</html>
